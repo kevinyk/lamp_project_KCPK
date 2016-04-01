@@ -1,0 +1,440 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body {
+    font-family: "Karla", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+#myCarousel {
+	margin-top: 100px;
+    max-width: 100%;
+}
+
+.subcontent{
+	display:inline-block;
+	width:380px;
+	height:600px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.subcontent img{
+	max-height: 90%;
+	max-width: 90%;
+}
+
+#container{
+	margin-left:5%;
+}
+
+#top_navbar {
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+.navbar-collapse {
+    background-color: white;
+}
+
+.container-fluid {
+    background-color: white;
+    height: 60px;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 52%;
+    margin-left: -100px !important;
+    display: block;
+	font-size: 2em;
+	margin-top: 10px;
+	font-family: Courier;
+}
+
+.footer {
+	background-color: black;
+	height: 350px;
+    margin-top: 80px;
+}
+
+#shop_container {
+    margin: 0 auto;
+    width: 100%;
+}
+.shop {
+    width: 510px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-left: 63px;
+}
+
+.shop_bottom {
+    width: 342px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.top {
+	background-color: black;
+	height: 50px;
+	padding: 15px;
+}
+
+#submit {
+    background-color: white;
+    border: 2px solid black;
+    border-left: none;
+    font-weight: bolder;
+    border-radius: 0px;
+    margin-left: -8px;
+    height: 35px;
+}
+
+p {
+	color: black;z
+	margin-left: 30px;
+}
+
+.white {
+    color: white;
+}
+
+#logo {
+    margin-top: -12px;
+    margin-left: 80px;
+}
+
+.white_search {
+    color: white;
+    font-size: 2.5em;
+    margin-top: -40px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.footer_header {
+    color: gray;
+    border-bottom: 2px solid white;
+    margin-top: 40px;
+}
+
+.footer ul li {
+    list-style-type: none;
+}
+
+#newsletter {
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+	height: 150px;
+}
+
+#register {
+	margin-bottom: 50px;
+}
+
+#email, .form-control {
+	border: 2px solid black;
+	border-radius: 0px;
+    background-color: white;
+    color: black;
+    height: 35px;
+}
+
+#search {
+	margin-left: 1px;
+	color: black;
+    border-top: 0px;
+}
+
+#pay {
+    margin-bottom: 30px;
+}
+
+body {
+    padding: 10px 0px 0px;   
+}
+
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+    -moz-transform: translate(0px, -100%) scale(0, 0);
+    -o-transform: translate(0px, -100%) scale(0, 0);
+    -ms-transform: translate(0px, -100%) scale(0, 0);
+    transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+    -o-transform: translate(0px, 0px) scale(1, 1);
+    -ms-transform: translate(0px, 0px) scale(1, 1);
+    transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+#search .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 61px;
+    margin-left: -45px;
+}
+#search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    opacity: 1;
+    padding: 10px 17px;
+    font-size: 27px;
+}
+
+.btn {
+/*    padding: 14px 24px;*/
+    border: 3px solid black;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    background: white;
+    color: black;
+    border: 3px solid black;
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: white;
+    color: black;
+    border: 3px solid black;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: white;
+    box-shadow: none;
+    color: black;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: white;
+    color: black;
+    border: 3px solid black;
+    box-shadow: none;
+}
+
+/* navbar */
+.navbar{
+    background-color: #FFFFFF;
+    border-color: #E7E7E7;
+    height: 100px;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #000000;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #000000;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #FFFFFF;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #FFFFFF;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
+
+.promoBox{
+    margin-top: 5%;
+    margin-left: 11%;
+    margin-bottom: 5%;
+}
+.boxLeft{
+    background-image: url('/assets/promo_box.jpeg');
+    height:198px;
+    width: 496px;
+    display:inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin:0px;
+}
+.left_input{
+    width: 300px;
+    text-align: center;
+    margin: 15px 0px 0px;
+    
+}
+span{
+    font-weight: bold;
+}
+.learnMore{
+    border:0px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0px 0px;
+}
+.input_submit{
+    border:none;
+    font-weight: bold;
+    background-color: transparent;
+}
+.h6_title{
+    font-size: 20px;
+    font-weight: bold;
+    margin:30px 0px 0px;
+}
+.black2{
+    color:black;
+    font-size:13px;
+    margin:4px 0px 0px;
+}
+.black{
+    color:black;
+    font-size:15px;
+    margin:0px;
+}
+.boxLeftContent_title{
+    width: 100%;
+    position: absolute;
+
+}
+.boxRight{
+    height:198px;
+    width: 496px;
+    background-image: url('/assets/promoBox2.jpeg');
+    display:inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 0px;
+}
+
+
+/*@media only screen and (max-width: 480px) {
+    body { background: green; }
+}
+@media only screen and (min-width: 481px) {
+    body { background: red; }
+}
+@media only screen and (min-width: 1024px) {
+    body { background: yellow; }*/
+}
