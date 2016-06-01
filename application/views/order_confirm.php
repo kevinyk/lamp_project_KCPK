@@ -16,6 +16,11 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="/assets/home_view_style.css">
+<style type="text/css">
+    #add_order{
+        color:black;
+    }
+</style>
 </head>
 <body>
 
@@ -29,7 +34,7 @@
 </nav>
 
 <div class="container">
-    <a href ="/Users/order/">Click here to confirm and add order to database</a>
+    <a id = 'add_order' href ="/Users/order/">Click here to confirm and add order to database</a>
     
 </div>
 </div>

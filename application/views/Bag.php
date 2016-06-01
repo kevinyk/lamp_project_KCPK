@@ -82,6 +82,9 @@
 			border-radius: 0px;
 			border:none;
 		}
+		#bag_action{
+			color:black;
+		}
 </style>
 
 
@@ -112,7 +115,7 @@
 					<td class ='size'><?= $cartItem['size'] ?></td>
 					<td class ='qty'><?= $cartItem['quantity'] ?></td>
 					<td class ='price'>$<?= $cartItem['price'] ?></td>
-					<td class='action'><a href="/Products/remove_from_bag/<?= $cartItem['id'] ?>">REMOVE</a></td>
+					<td class='action'><a id = "bag_action" href="/Products/remove_from_bag/<?= $cartItem['id'] ?>">REMOVE</a></td>
 					<!-- NEED TO ADD REMOVE FUNCTIONALITY -->
 				</tr>
 			</div>
@@ -146,9 +149,9 @@
 						<td class='money'>$<?= $subtotal ?></td>
 					</tr>
 				</table>
-				<form action='/Products/Checkout' method = 'POST'>
+				<form action='/Products/shipping' method = 'POST'>
 					<input type = 'hidden' name = 'subtotal' value ='<?= $subtotal ?>'>
-					<input type='submit' value='PROCEED TO CHECKOUT'></input>	
+					<input type='submit' value='PROCEED TO CHECKOUT/SHIPPING INFO'></input>	
 				</form>
 
 			</div>

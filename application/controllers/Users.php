@@ -121,7 +121,8 @@ class Users extends CI_Controller {
 		$shippingInfo = $this->input->post();
 		$this->load->model('User');
 		$this->User->add_shipping_info($shippingInfo, $currentUserID);
-		redirect('/Users/show_billing_form');
+		// redirect('/Users/show_billing_form');
+		$this->load->view('billing_info');
 	}
 	public function show_billing_form()
 	{

@@ -227,9 +227,10 @@ class Products extends CI_Controller {
 	{
 		$itemToAdd = $this->input->post();
 		$this->load->model('Product');
-		$itemToAdd['id']= $this->Product->getProductStockfromProduct($itemToAdd['product_id'], $itemToAdd['size']);
-		$this->Product->addItemToCart($itemToAdd, $this->session->userdata['cart_id']);
 
+		$itemToAdd['id']= $this->Product->getProductStockfromProduct($itemToAdd['product_id'], $itemToAdd['size']);
+		$this->Product->addItemToCart($itemToAdd, $this->Product->getCartIDfromUserID($this->session->userdata['currentUser']['id']));
+		redirect('/Products/displayBag');
 	}
 	function itemDetails($itemID){
 		$this->load->model('Product');
@@ -254,6 +255,7 @@ class Products extends CI_Controller {
 		foreach($cartItems['allItems'] as $item){
 			$cartItems['subtotal']+=($item['price']*$item['quantity']);
 		}
+		$this->session->userdata['subtotal'] = $cartItems['subtotal'];
 		$this->load->view('Bag', $cartItems);
 	}
 	public function checkout()

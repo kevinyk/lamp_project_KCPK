@@ -142,7 +142,7 @@ class Product extends CI_Model {
 	}
 	public function getCartIDfromUserID($user_id)
 	{
-		$query = "SELECT cart_id FROM cart_users WHERE cart_users.user_id = $user_id";
+		$query = "SELECT cart_id FROM cart_users WHERE cart_users.user_id = $user_id ORDER BY cart_id DESC LIMIT 1";
 		return $this->db->query($query)->row_array();
 	}
 	public function addItemToCart($itemToAdd, $cart_id)
@@ -180,6 +180,10 @@ class Product extends CI_Model {
 		$query = "SELECT * FROM order_product LEFT JOIN products_stock ON order_product.product_stock_id = products_stock.id LEFT JOIN products ON products_stock.product_id = products.id WHERE order_product.order_id = $order_id";
 		return $this->db->query($query)->result_array();
 	}
-
+	public function createNewCart($user_id)
+	{
+		$query = "INSERT INTO cart_users (user_id) VALUES ($user_id)";
+		$this->db->query($query);
+	}
 
 }

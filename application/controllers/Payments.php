@@ -32,6 +32,8 @@ class Payments extends CI_Controller {
     } catch(\Stripe\Error\Card $e) {
       $this->session->set_flashdata("errors", "Invalid Card. Please try again with another credit card");
     }
+    $this->load->model('Product');
+    $this->Product->createNewCart($this->session->userdata['currentUser']['id']);
     redirect("/");
   }
 }
